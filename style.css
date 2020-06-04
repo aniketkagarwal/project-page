@@ -35,16 +35,28 @@ body {
 
 @media (min-width: 1200px){
     .box span {
-        vertical-align: -15px;
+    	position: absolute;
+    	top: 37%;
+    	-ms-transform: translateY(-37%);
+  		transform: translateY(-37%);
     }
 }
 
 @media (min-width: 992px) and (max-width:  1200px) {
-
+	.box span {
+        position: absolute;
+    	top: 37%;
+    	left: 31%;
+    	-ms-transform: translateY(-37%);
+  		transform: translateY(-37%);
+    }
 }
 
 @media (max-width:  992px) {
     .box span {
-        vertical-align: -15px;
+        position: absolute;
+    	top: 37%;
+    	-ms-transform: translateY(-37%);
+  		transform: translateY(-37%);
     }
 }
