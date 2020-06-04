@@ -6,6 +6,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: Arimo, sans-serif;
+    min-width: 280px;
 }
 
 .container .row {
@@ -21,6 +22,7 @@ body {
 
 .box span {
     font-size: 20px ;
+    vertical-align: center;
     /* display: inline; */
 }
 
@@ -42,17 +44,32 @@ body {
     }
 }
 
-@media (min-width: 992px) and (max-width:  1200px) {
+/*@media (min-width: 992px) and (max-width:  1200px) {
+	.box {
+		width: 310px;
+	}
+	.col-lg-4 {
+		margin-left: 0px;
+	}
 	.box span {
         position: absolute;
     	top: 37%;
-    	left: 31%;
+    	left: 33%;
+    	-ms-transform: translateY(-37%);
+  		transform: translateY(-37%);
+    }
+}*/
+
+@media (min-width: 460px) and (max-width:  991px) {
+    .box span {
+        position: absolute;
+    	top: 37%;
     	-ms-transform: translateY(-37%);
   		transform: translateY(-37%);
     }
 }
 
-@media (max-width:  992px) {
+@media (min-width: 360px) and (max-width:  400px) {
     .box span {
         position: absolute;
     	top: 37%;
